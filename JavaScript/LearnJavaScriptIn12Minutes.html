@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript</title>
+    <script>
+        function sayHello(who)  {
+            document.write("Hello " + who);
+        }
+    </script>
+</head>
+<body>
+    <script>
+        document.write("Hello World!");
+        document.write("<br>");
+        
+        var myVariable = 5;  //This is a comment
+        //This is another comment
+        
+        var words = "This is";
+        var moreWords = " a sentence.";
+        var sentence = words + moreWords;
+        document.write(sentence);
+        document.write("<br>");
+        
+        var num1 = 5;
+        var num2 = 3;
+        var total = num1++;
+        document.write(total);
+        document.write(num1);
+        document.write("<br>");
+        
+        var alpha = "ABCDEFG";
+        var length = alpha.length;
+        document.write(length);
+        var result = alpha.substring(0, 5);
+        document.write(result)
+        document.write("<br>");
+        
+        //Arrays
+        var a = new Array(7);
+        a[0] = "cat"
+        a[1] = "dog"
+        a[2] = 95
+        a[6] = true;
+        document.write(a[1]);
+        document.write("<br>");
+        
+        var a = new Array("cat", "dog", 53, true);
+        document.write(a[1]);
+        document.write("<br>");
+        
+        var a = ["dog", "cat", 3, 5, false];
+        document.write(a[3]);
+        document.write("<br>");
+        
+        document.write("<br>");
+        document.write("<br>");
+        sayHello("Bob");
+        document.write("<br>");
+        sayHello("Mary");
+        document.write("<br>");
+        
+        var a = "jake";
+        if (a == "Jake") {
+            alert(a);
+        }   else {
+                alert("The condition was false.");
+        }
+        document.write("<br>")
+        
+        for (i=1;i<6;i++) {
+            document.write("This is iteration " + i +"<br>");   
+        }
+    </script>
+</body>
+</html>

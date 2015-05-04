@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Video Tutorial Pt 1</title>
+</head>
+<body>
+    <script>
+        document.write(Number.MAX_VALUE+"<br />");
+        document.write(Number.MIN_VALUE+"<br />");
+        document.write("<br />");
+        
+        
+        var samp_str = "Here are some escaped character \" \' \\ \t \n";
+        document.write(samp_str);
+        document.write("<br />");
+        document.write("<br />");
+        
+        var first_str = "First String ";
+        var second_str = "Second String";
+        
+        var combined = first_str + second_str;
+        document.write(combined + "<br />");
+        document.write("Length of string: " + combined.length + "<br />");
+        document.write("Substring " + combined.substring(6, 12) + "<br />");
+        document.write("Last character " + combined.charAt(combined.length-1) + "<br />");
+        document.write("Index of T is: " + combined.indexOf('t') + "<br />");
+        
+        var str_var = "5";
+        var num_var = 10;
+        var total = num_var + str_var;
+        document.write(total + "<br />");
+        var mult_total = num_var * str_var;
+        document.write(mult_total + "<br />");
+        
+        total = num_var + Number(str_var);
+        document.write("5 + 10 = " + total + "<br />");
+        
+        var num_var2 = String(num_var);
+        document.write(num_var + num_var + "<br />");
+        document.write(num_var + num_var2 + "<br />");
+        
+        var float_var = 3.141592653589793238;
+        var float_str = float_var.toFixed(5);
+        document.write("Shortened Pi " + float_str + "<br />");
+        
+        document.write("Integer Pi " + parseInt(float_str) + "<br />");
+        
+        document.write("Datatype of float_str " + typeof(float_str) + "<br />");
+        document.write("Databases of float_var " + typeof(float_var) + "<br />");
+        
+        bool_var = Boolean(23);
+        document.write("Boolean of 23 is " + bool_var + "<br />");
+        
+        var rand_num1 = 5;
+        var rand_num2 = 10;
+        
+        document.write("Is 5 > 10 " + (rand_num1 > rand_num2) + "<br />");
+        document.write("Is 5 >= 10 " + (rand_num1 >= rand_num2) + "<br />");
+        document.write("Is 5 < 10 " + (rand_num1 < rand_num2) + "<br />");
+        document.write("Is 5 <= 10 " + (rand_num1 <= rand_num2) + "<br />");
+        document.write("Is 5 == 10 " + (rand_num1 == rand_num2) + "<br />");
+        document.write("Is 5 != 10 " + (rand_num1 != rand_num2) + "<br />");
+        
+        document.write("Is 5 != 10 " + (rand_num1 != rand_num2) + "<br />");
+        
+        document.write("Is 5 < 10 and 5 !=10 " + ((rand_num1 < rand_num2) && (rand_num1 != rand_num2)) + "<br />");
+        document.write("Is 5 > 10 or 5 !=10 " + ((rand_num1 > rand_num2) || (rand_num1 != rand_num2)) + "<br />");
+        document.write("Is 5 < 10 " + !(rand_num1 < rand_num2) + "<br />");
+        
+        var vehicles = new Array("car", "truck", "van");
+        document.write("The second item in the array is: " + vehicles[1] + "<br />");
+        
+        for(i in vehicles)
+        {
+            document.write("Value in array " + vehicles[i] + "<br />");
+        }
+        
+        var rand_var = (5 < 10) ? "5 is less than 10" : "5 is greater than 10"
+        document.write("rand_var equals " + rand_var + "<br />");
+        
+        if (5 > 5)
+        {
+            document.write("5 is greater than 10" + "<br />");
+        }
+        else if (5 < 5)
+        {
+            document.write("5 is less than 10" + "<br />");
+        }
+        else
+        {
+            document.write("5 is equal to 5" + "<br />");
+        }
+        
+        var state = "Pennsylvania";
+        
+        switch(state)
+        {
+            case "California":
+                    document.write("Warmer than me" + "<br />");
+                break;
+                
+            case "Pennsylvania":
+                document.write("Same as me" + "<br />");
+                break;
+            default:
+                document.write("I don\'t know" + "<br />");
+        }
+        
+        var count = 1;
+        
+        while( count <= 10 )
+        {
+            if(count == 6)
+            {
+                break;
+            }
+        
+            if(count % 2)
+            {
+                count++;
+                continue;
+            }
+            document.write(count + "<br />");
+            count++;
+        }
+        
+        var count = 20;
+        do {
+            document.write(count + "<br />");
+            count--;
+        } while(count > 10);
+        
+        for(var count=0; count <= 10; count++)
+        {
+            document.write(count + "<br />");
+        }
+    </script>
+</body>
+</html>
