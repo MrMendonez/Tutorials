@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Joy of jQuery - UI Tabs</title>
+    <link rel="stylesheet" href="jquery-ui.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script>
+        $(function() {
+            $("#tabs").tabs();
+        });
+    </script>
+</head>
+<body>
+    <h1>Sam's Used Cars</h1>
+    <h2>2013 Rolls-Royce Phantom Drophead Coupe Base - $507,800</h2>
+    <div id="tabs">
+        <ul>
+            <li><a href="#tabs-1">Overview</a></li>
+            <li><a href="#tabs-2">Photographs</a></li>
+            <li><a href="#tabs-3">Finance Calculator</a></li>
+        </ul>
+        <div id="tabs-1">
+            <p>Mileage: 23<br>
+            Body Style: Convertable<br>
+            Exterior Color: Midnight Sapphire<br>
+            Interior Color: Seashell<br>
+            Stock#: R177<br>
+            <br>
+            Fuel: Gasoline<br>
+            Engine: 6.8L V12 48V GDI DOHC<br>
+            Transmission: 8-Speed Automatic<br>
+            Drivetrain: RWD<br>
+            Doors: 2
+            </p>
+        </div>
+        <div id="tabs-2">
+            <p><img alt="Rolls Royce Interior" height="266" src="http://www.carscarsandcars.com/wp-content/uploads/2010/06/p23-RR-Ghost.jpg" width="400"></p>
+        </div>
+        <div id="tabs-3">
+            <p>Serious.&nbsp;If you have to ask, you can't afford this one.</p>
+        </div>
+    </div>
+</body>
+</html>

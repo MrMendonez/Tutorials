@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Joy of jQUery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+    
+    <!-- to avoid header text from being truncated overwrite the margin -->
+    <style type="text/css">
+        .ui-header .ui-title {
+            margin-right: 10%;
+            margin-left: 10%
+        }
+    </style>
+</head>
+<body>
+
+    <div data-role="page" id="mainPage" data-theme="a">
+    
+        <div data-role="header" data-theme="a">
+        
+            <h4>Sam's Used Cars</h4>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-inset="true" data-filter="true">
+                <li><a href="#Acura" data-transition="slide">Acura</a></li>
+                <li><a href="#BMW" data-transition="slide">BMW</a></li>
+                <li><a href="#Chevy" data-transition="slide">Chevrolet</a></li>
+                <li><a href="#Dodge" data-transition="slide">Dodge</a></li>
+            </ul>
+        </div>
+        <div data-role="footer" data-theme="a">
+        
+            <h4>Sam's Used Cars</h4>
+        </div>
+    </div>
+    
+    <div data-role="page" id="Acura">
+        <div data-role="header" data-theme="a">
+        
+            <a data-rel="back" data-direction="reverse" href="#mainPage">Back</a>
+            <h1>Acura</h1>
+        </div>
+        <div data-role="content">
+            <img border="0" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSryS3h8HfQsQBjueu6RIP_5bI5-8kliQiKgVcecZq9QVkukbGRng" width="300px" />
+            <p>Sam just got a new shipment of Acuras for you! These babies are going fast so don't delay...</p>
+        </div>
+        <div data-role="footer" data-theme="a">
+        
+            <h4>Call Sam now!</h4>
+        </div>
+    </div>
+    
+    <div data-role="page" id="BMW">
+    
+        <div data-role="header" data-theme="a">
+        
+            <a data-rel="back" data-direction="reverse" href="#mainPage">Back</a>
+            <h1>BMW</h1>
+        </div>
+        <div data-role="content">
+            <img border="0" src="http://www.digitaltrends.com/wp-content/uploads/2013/02/bmw-3-series-gt-leak-2_1035.jpg" width="300px" />
+            <p>Guys--you'll always get the girl when behind the wheel of the ultimate driving machine.</p>
+            <p>Sam has an excellent selection of quality used BMWs</p>
+        </div>
+        <div data-role="footer" data-theme="a">
+            <h4>Call Sam @ 555-1212</h4>
+        </div>
+    </div>
+    
+    <div data-role="page" id="Chevy">
+        <div data-role="header">
+            <a data-rel="back" data-direction="reverse" href="#mainPage">Back</a>
+            <h1>Cheverolet</h1>
+        </div>
+        <div data-role="content">
+            <img border="0" src="http://www.driversvillage.uz/userfiles/images/2013-Chevrolet-Camaro-1LE-Front-Low-main_rdax_646x396.jpg" width="300px" />
+            <p>The perfect vehicles for big families on a budget. Sam has an excellent selection of quality used Cheverolets</p>
+        </div>
+        <div data-role="footer">
+            <h4>Call Sam Today!</h4>
+        </div>
+    </div>
+    
+    <div data-role="page" id="Dodge" data-theme="a">
+    
+        <div data-role="header" data-theme="a">
+        
+            <a data-rel="back" data-direction="reverse" href="#mainPage">Back</a>
+            <h1>Dodge</h1>
+        </div>
+        <div data-role="content">
+            <img border="0" src="http://www.autohdwall.com/galeri/2/2015-dodge-challenger-rt-shaker-hd-wallpaper-1.jpg" width="300px" />
+            <p>The perfect vehicles for big families on a budget. Sam has an excellent selection of quality used Chevrolets</p>
+        </div>
+        <div data-role="footer" data-theme="a">
+            <h4>Sam loves Dodge!</h4>
+        </div>
+    </div>
+</body>
+</html>

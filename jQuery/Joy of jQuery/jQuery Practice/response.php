@@ -1,0 +1,1 @@
+<h1></h1><p>Monday is your lucky day at Sam's Used Cars.  If we don't have a  we'll find one for you!</p>

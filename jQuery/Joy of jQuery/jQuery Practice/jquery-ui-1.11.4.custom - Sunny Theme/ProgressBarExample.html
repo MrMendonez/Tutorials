@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Progress Bar Example</title>
+    <link rel="stylesheet" href="jquery-ui.css" />
+    <link href="jquery-ui.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script>
+        $(function() {
+            $("#progressbar").progressbar({
+                value: 37
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Joy of jQuery: Sam's Used Cars</h1>
+    <h2>Progress Bar Example</h2>
+    <p>Thank you for taking your car to Sam's Used Cars repair shop.</p>
+    <p>Your car is 37% repaired... In other words, we have successfully taken in apart.</p>
+    <div id="progressbar"></div>
+</body>
+</html>
